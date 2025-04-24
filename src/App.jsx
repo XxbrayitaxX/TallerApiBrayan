@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Layouts/Header/Header';
 import Footer from './Layouts/Footer/Footer';
-import MainContainer from './Layouts/MainContainer/MainContainer';
+import MainContainer from './Pages/MainContainer/MainContainer';
 import './App.css'; 
 
 function App() {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import ProductCard from './ProductCard/ProductCard';
-import SearchBar from './SearchBar/SearchBar';
-import './MainContainer.css';
+import ProductCard from "../../Components/ProductCard/ProductCard"
+import SearchBar from "../../Components/SearchBar/SearchBar";
+
 
 const MainContainer = () => {
     const [products, setProducts] = useState([]);
@@ -21,7 +21,7 @@ const MainContainer = () => {
     return (
       <div>
         <SearchBar setSearchTerm={setSearchTerm} />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="product-grid">
           {filteredProducts.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
